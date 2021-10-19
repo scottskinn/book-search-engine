@@ -5,7 +5,7 @@ const { authMiddleware } = require('./utils/auth');
 // import our typeDefs and resolvers
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
-
+const path = require('path')
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -38,13 +38,9 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
-
-app.get('*', (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, './public/404.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+// });
 
 db.once('open', () => {
   app.listen(PORT, () => {

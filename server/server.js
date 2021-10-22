@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('*', (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, './public/404.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 

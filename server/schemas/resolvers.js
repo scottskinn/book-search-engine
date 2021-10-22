@@ -43,7 +43,7 @@ const resolvers = {
                     { _id: context.user._id},
                     { $addToSet: { savedBooks: args.input} },
                     { new: true}
-                );
+                ); console.log(updatedUser)
                 return updatedUser
             }
             throw new AuthenticationError('Not logged in!')

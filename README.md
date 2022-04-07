@@ -32,16 +32,10 @@
 
 [![Github][github-shield]][github-url]
 
-## License
-
-## Tests
-
 ## Contact
 
-  [scottskinn](https://github.com/scottskinn/).
+  [scottskinn](https://github.com/scottskinn/)
   
   [scottskinn2n@gmail.com](mailto:scottskinn2n@gmail.com)
-
-
 
   [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge

@@ -4,7 +4,7 @@
   "description": "",
   "engines": {
     "node": "16.4.1"
-    },
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node index.js",
@@ -21,6 +21,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "express": "^4.17.3",
     "if-env": "^1.0.4",
     "jquery": "^3.6.0",
     "jwt-decode": "^3.1.2"
